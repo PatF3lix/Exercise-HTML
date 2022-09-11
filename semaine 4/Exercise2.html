@@ -13,14 +13,24 @@
             .souper, .dessert, .diner{
                 color: white;
             }
-            .center, .menu{
+            .menu{
                 margin-left: auto;
                 margin-right: auto;
             }
             .rightaligntext, .souper, .dessert{
                 text-align: right;
             }
-
+            #dine, .déjeuner {
+                text-align: left;
+            }
+            .form, .btnrow{
+                text-align: center;
+                border: 1px solid black; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            
         </style>
     </head>
     
@@ -34,8 +44,8 @@
                 <col style="background-color: green;">
             </colgroup>
             <tr>
-              <th>Déjeuner</th>
-              <th class="diner">Diner</th>
+              <th class="déjeuner">Déjeuner</th>
+              <th id="dine" class="diner">Diner</th>
               <th class="souper">Souper</th>
               <th class="dessert">Dessert</th>
             </tr>
@@ -69,7 +79,7 @@
                 <td class="dessert">Barres de muesli</td>
           </table>
 
-          <table class="center" >
+          <table class="form" >
             <form>
                 <tr>
                     <td class="rightaligntext">
@@ -132,13 +142,9 @@
                         <input size="45" type="text" id="payement"/>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <!--Empty cell-->
-
-                    </td>
-                    <td style="text-align: center; vertical-align:middle;">
-                        <button >Submit</button>
+                <tr class="btnrow">
+                    <td colspan="2" id="btncolom" >
+                        <button id="btn">Submit</button>
                     </td>
                 </tr>
             </form>

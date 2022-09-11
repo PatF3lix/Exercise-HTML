@@ -23,13 +23,36 @@
             #dine, .déjeuner {
                 text-align: left;
             }
-            .form, .btnrow{
+            .form{
                 text-align: center;
                 border: 1px solid black; 
                 margin-left: auto;
                 margin-right: auto;
             }
-            
+
+            img{
+                width: 100px;
+                height: 50px;
+            }
+
+            .container{
+                position: relative;
+            }
+
+            /* Style the button and place it in the middle of the container/image */
+            .container, #btn {
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 5px;
+            }
+
+            #btn{
+                position: absolute;
+                top: 13px;
+                left: 44%;
+            }
+
+
             
         </style>
     </head>
@@ -142,9 +165,13 @@
                         <input size="45" type="text" id="payement"/>
                     </td>
                 </tr>
+                <!-- source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_button_on_image-->
                 <tr class="btnrow">
-                    <td colspan="2" id="btncolom" >
-                        <button id="btn">Submit</button>
+                    <td colspan="2" id="btncolom">
+                        <div class="container">
+                            <img  src="147306-blue-button-glossy-free-clipart-hq.png" alt="btn">
+                            <button id="btn">Submit</button>
+                        </div>  
                     </td>
                 </tr>
             </form>

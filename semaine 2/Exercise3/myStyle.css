@@ -1,0 +1,13 @@
+.enProgress{
+    text-decoration: underline;
+}
+.proSession{
+    font-style: italic;
+}
+.content{
+    text-align: center;
+}
+.listCours{
+    display: inline-block;
+    text-align: left;
+}

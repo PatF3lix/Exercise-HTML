@@ -2,7 +2,7 @@
 
 function sortListDir() {
     var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
-    list = document.getElementById("listCours");
+    list = document.getElementById("Cours");
     switching = true;
     // Set the sorting direction to ascending:
     dir = "asc"; 

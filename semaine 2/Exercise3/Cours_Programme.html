@@ -2,41 +2,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>List des cours du Programme de développement de logiciels</title>
+        <title>List des cours Patrick Oliveira</title>
         <meta charset="UTF-8">
         <meta name="Keyword" content="HTML, CSS, Jscript",>
         <meta name="Author" content="Patrick Oliveira">
         <script src="myscripts.js"></script>
-        <style>
-
-        </style>
+        <link rel="StyleSheet" href="myStyle.css">
     </head>
 
     <body>
-        <h2><strong>--List de Cours--</strong></h2>
-        <div>
-            <ul id="listCours">
+        <div class="content">
+            <h2><strong>--List de Cours--</strong></h2>
+            <p>Cliquez sur le bouton pour trier la liste par ordre croissant (A à Z) :</p>
+            <p>Cliquez à nouveau pour trier la liste par ordre décroissant (Z à A) :</p>
+            <ul class="listCours" id="Cours">
                 <li>Concept de Programmation 1</li>
                 <li>Anglais</li>
                 <li>Système d'opération Linux</li>
-                <li>Concept de Programmation 2</li>
-                <li>Programmation Web (front-end)</li>
-                <li>Base de Donnée</li>
-                <li>Développement d'applications</li>
-                <li>Services Web</li>
-                <li>Développement de Systèmes</li>
-                <li>Algorithmes et modèles de Programation</li>
+                <li class="enProgress">Concept de Programmation 2</li>
+                <li class="enProgress">Programmation Web (front-end)</li>
+                <li class="enProgress">Base de Donnée</li>
+                <li class="proSession">Développement d'applications</li>
+                <li class="proSession">Services Web</li>
+                <li class="proSession">Développement de Systèmes</li>
+                <li class="proSession">Algorithmes et modèles de Programation</li>
                 <li>Projet d'étude sur le milieu</li>
                 <li>Applications web transaction</li>
                 <li>Développement d'applications 2</li>
                 <li>Cybersécurité</li>
                 <li>Stages</li>
             </ul>
+            <br>
+            <button onclick="sortListDir()">Trié</button>
+            <br>
+            <a href="index.html"><br>Page Précédente</a>
         </div>
-            <p>Cliquez sur le bouton pour trier la liste par ordre croissant (A à Z) :</p>
-            <p>Cliquez à nouveau pour trier la liste par ordre décroissant (Z à A) :</p>
-
-        <button onclick="sortListDir()">Trié</button>
-
     </body>
 </html>

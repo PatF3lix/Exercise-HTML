@@ -8,6 +8,9 @@
     text-align: center;
 }
 .listCours{
+    font-size: 18px;
     display: inline-block;
     text-align: left;
+    list-style: url("rocket-icon.png");
+    
 }

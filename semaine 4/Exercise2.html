@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .menu .menu tr, .menu th,.menu td {
+              border:1px solid black;
+              border-collapse: collapse;
+            }
+            h1{
+                text-align: center;
+            }
+            .souper, .dessert, .diner{
+                color: white;
+            }
+            .center, .menu{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .rightaligntext, .souper, .dessert{
+                text-align: right;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <h1>Menu de restaurant</h1>
+        <table class="menu" >
+            <colgroup>
+                <col style="background-color: white;">
+                <col style="background-color: blue;">
+                <col style="background-color: red;">
+                <col style="background-color: green;">
+            </colgroup>
+            <tr>
+              <th>Déjeuner</th>
+              <th class="diner">Diner</th>
+              <th class="souper">Souper</th>
+              <th class="dessert">Dessert</th>
+            </tr>
+            <tr>
+              <td>PAIN DORÉ poires,bleuets & brie</td>
+              <td class="diner">Burrito</td>
+              <td class="souper">Côtelettes de porc aux champignons et feta</td>
+              <td class="dessert">Chia pudding pomme-cannelle</td>
+            </tr>
+            <tr>
+                <td>COMBO Crêpe,poires & brie</td>
+                <td class="diner">Fajitas</td>
+                <td class="souper">Casserole de boeuf style tacos</td>
+                <td class="dessert">Crème au chocolat</td>
+            </tr>
+            <tr>
+                <td>Gaufre fruits frais & crème anglaise</td>
+                <td class="diner">Burgers ou hot-dogs</td>
+                <td class="souper">Gratin de pommes de terre et saumon à la mijoteuse</td>
+                <td class="dessert">Tresse au chocolat</td>
+            </tr>
+            <tr>
+                <td>Crêpe bananes, fraises, choco & crème anglaise</td>
+                <td class="diner">Quesadillas (fromage nature, steak, poulet ou porc)</td>
+                <td class="souper">Pennes Alfredo aux saucisses</td>
+                <td class="dessert">Madeleines à la fleur d'oranger</td>
+            </tr>
+                <td>BAGEL FROMAGE À LA CRÈME</td>
+                <td class="diner">Boulettes de viande et riz</td>
+                <td class="souper">Tofu parmigiana</td>
+                <td class="dessert">Barres de muesli</td>
+          </table>
+
+          <table class="center" >
+            <form>
+                <tr>
+                    <td class="rightaligntext">
+                        <label>Choix d'assiette:</label>
+                    </td>
+                    <td>
+                        <select name="assiette">
+                            <optgroup label="Dejeuner">
+                                <option value="PAIN DORÉ poires,bleuets & brie">PAIN DORÉ poires,bleuets & brie</option>
+                                <option value="COMBO Crêpe,poires & bri">COMBO Crêpe,poires & bri</option>
+                                <option value="Gaufre fruits frais & crème anglaise">Gaufre fruits frais & crème anglaise</option>
+                                <option value="Crêpe bananes, fraises, choco & crème anglaise">Crêpe bananes, fraises, choco & crème anglaise</option>
+                                <option value="BAGEL FROMAGE À LA CRÈME">BAGEL FROMAGE À LA CRÈME</option>
+                            </optgroup>
+                            <optgroup label="Diner">
+                                <option value="Burrito">Burrito</option>
+                                <option value="Fajitas">Fajitas</option>
+                                <option value="Burgers ou hot-dogs">Burgers ou hot-dogs</option>
+                                <option value="Quesadillas (fromage nature, steak, poulet ou porc)">Quesadillas (fromage nature, steak, poulet ou porc)</option>
+                                <option value="Boulettes de viande et riz" >Boulettes de viande et riz</option>
+                            </optgroup>
+                            <optgroup label="souper">
+                                <option value="Côtelettes de porc aux champignons et feta">Côtelettes de porc aux champignons et feta</option>
+                                <option value="Casserole de boeuf style tacos">Casserole de boeuf style tacos</option>
+                                <option value="Gratin de pommes de terre et saumon à la mijoteuse">Gratin de pommes de terre et saumon à la mijoteuse</option>
+                                <option value="Pennes Alfredo aux saucisses">Pennes Alfredo aux saucisses</option>
+                                <option value="Tofu parmigiana">Tofu parmigiana</option>
+                            </optgroup>
+                            <optgroup label="dessert">
+                                <option value="Chia pudding pomme-cannelle">Chia pudding pomme-cannelle</option>
+                                <option value="Crème au chocolat">Crème au chocolat</option>
+                                <option value="Tresse au chocolat">Tresse au chocolat</option>
+                                <option value="Madeleines à la fleur d'oranger">Madeleines à la fleur d'oranger</option>
+                                <option value="Barres de muesli">Barres de muesli</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightaligntext">
+                        <label for="livraison">Address de livraison:</label>
+                    </td>
+                    <td >
+                        <input size="45" type="text" id="livraison"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightaligntext" >
+                        <label  for="user name">Nom utilisateur:</label>
+                    </td>
+                    <td>
+                        <input size="45" type="text" id="user name"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="rightaligntext">
+                        <label for="methode de payement">méthodes de payement:</label>
+                    </td>
+                    <td>
+                        <input size="45" type="text" id="payement"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--Empty cell-->
+
+                    </td>
+                    <td style="text-align: center; vertical-align:middle;">
+                        <button >Submit</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+        <!--to be continued-->
+    </body>
+</html>

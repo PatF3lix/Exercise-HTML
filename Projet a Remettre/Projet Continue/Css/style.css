@@ -1,0 +1,16 @@
+body{
+    background-image: url(../img/ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.box {
+    background-image: url(../img/Subtle-Light.jpg);
+    padding: 100px;
+    margin: 100px;
+    background-repeat: no-repeat;
+    background-size: 1100px 6000px;
+} 
+ 
